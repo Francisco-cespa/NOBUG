@@ -1,0 +1,337 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+main, header, footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo-conocenos{
+    display: grid;
+    
+}
+
+/* seccion header */
+
+.header {
+    background-color: black;  
+    height: 350px;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "imagen titulo carrito"
+        "barra-navegacion barra-navegacion barra-navegacion"
+    ;
+}
+
+.titulo-tamaño {
+    font-size: 100px;
+}
+
+.titulo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    grid-area: titulo;
+}
+
+.imagen{
+    display: flex;
+    justify-content: flex-start;
+    grid-area: imagen;
+}
+
+.imagen img {
+    width: 250px;
+    height: 250px;
+}
+
+/* seccion carrito*/
+
+.carrito{
+    grid-area: carrito;
+    color: white;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+     align-items: end;
+     margin-right: 25px;
+}
+
+.carrito img{
+    width: 30px;
+    height: 30px;
+}
+
+.carrito button {
+margin: 8px;
+}
+
+.carrito-img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+}
+
+.carrito ul button{
+    display: flex;
+    list-style-type: none;
+}
+
+
+/*seccion barra navegacion*/
+
+.barra-navegacion{
+    grid-area: barra-navegacion;
+}
+
+.barra-navegacion ul li{
+    border: solid 2px white;
+    border-radius: 0px 20px 0px 20px;
+    padding: 5px;
+}
+
+.barra-navegacion a {
+    color: white; 
+    text-decoration: none ;
+}
+
+.barra-navegacion ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.barra-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+nav ul li a { 
+    list-style-type: none;
+}
+.paginas-index {
+    list-style-type: none;
+}
+
+/* seccion main index */
+
+.carrusel {
+    border: solid 10px black;
+}
+
+.tarjeta {
+    width: 500px;
+    border: solid 1px black ;
+    border-radius: 5px;
+    margin: 10px 0 20px 30px;
+}
+
+.tarjeta img{
+    width: 498px;
+    height: 498px;
+}
+
+.titulo-juego{
+    text-align: center; text-decoration: underline;
+    font-size: 20px;
+}
+
+
+.juegos-main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.page-item{
+    color: brown;
+}
+
+/* Main categorias */
+
+.subtitulo-pagina{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    /*text-align: center;*/
+}
+
+.categorias {
+    padding-left: 40px;
+}
+
+/*seccion main contacto*/
+
+.info-contacto{
+    display: flex;
+    flex-direction: column;
+}
+
+.info-contacto ul {
+    margin: 30px 0px 30px 40px;
+}
+
+.main__iframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__iframe iframe{
+    height: 450px;
+    width: 600px;
+    border-style: solid 10px;
+    border-color: gray;
+    border-radius: 10px;
+    margin: 30px 0px 30px 0px;
+}
+
+/* seccion footer */
+
+.footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    grid-template-areas: 
+    "footer-bar redes"
+    ;
+}
+
+.footer a , h4{
+    color: white;
+    text-decoration: none;
+    margin: 10px 10px 10px 10px;
+}
+
+.footer-bar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: footer-bar;
+    margin: 0px;
+}
+
+.footer-index {
+    list-style-type: none;
+}
+
+.redes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-area: redes;
+}
+
+.nuestras-redes {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.redes img{
+    width: 45px;
+    height: 45px;
+}
+
+@media (min-width: 498px) and (max-width: 768px) {
+
+/*seccion index*/
+
+.header {
+    display: grid;
+    grid-template-rows: 2fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "imagen titulo carrito"
+        "barra-navegacion barra-navegacion barra-navegacion"
+    ;
+    height: 200px;
+}
+
+ .titulo-tamaño{
+    font-size: 50px;
+ }
+
+ .imagen img{
+    width: 150px; height: 150px;
+ }
+
+ .imagen{
+    display: flex;
+    align-items: center;
+ }
+
+ .carrito {
+  font-size: 12px;
+  list-style-type: none;
+ }
+
+ .carrito button{
+    margin: 3px;
+ }
+
+ .barra-navegacion ul li{
+    font-size: 12px;
+    margin-bottom: 10px;
+ }
+
+ /*main index*/
+
+ .tarjeta {
+    width: 250px;
+    font-size: 12px;
+}
+
+.tarjeta img{
+    width: 249px;
+    height: 249px;
+}
+
+/*seccion main categorias*/
+
+.subtitulo-pagina{
+    font-size: 18px;
+}
+
+main p {
+    font-size: 12px;
+}
+
+
+/*seccion footer*/
+
+.footer{
+    font-size: 12px;
+}
+
+.footer a , h4{
+    margin: 5px 5px 5px 5px;
+}
+
+.redes img{
+    height: 30px;
+    width: 30px;
+}
+
+/*seccion contacto*/
+
+.main__iframe iframe{
+    height: 300px;
+    width: 400px;
+}
+
+}
+
