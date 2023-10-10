@@ -9,11 +9,6 @@ main, header, footer {
     font-family: 'Poppins', sans-serif;
 }
 
-.todo-conocenos{
-    display: grid;
-    
-}
-
 /* seccion header */
 
 .header {
@@ -168,6 +163,16 @@ nav ul li a {
     flex-wrap: wrap;
 }
 
+.pagination-index{
+   color: black;
+   
+}
+
+.pagination-index:hover{
+   color: white;
+   background-color: black;
+}
+
 /* Main categorias */
 
 .subtitulo-pagina{
@@ -205,6 +210,54 @@ nav ul li a {
     border-color: gray;
     border-radius: 10px;
     margin: 30px 0px 30px 0px;
+}
+
+/*seccion reclamos*/
+
+.formularios {
+    display: flex;
+    justify-content: center;
+}
+
+.form-nombre {
+    height: 45px;
+    width: 300px;
+    border: solid 2px black;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 8px 6px 4px ;
+    padding: 5px;
+    margin: 10px 20px 0px 0px;
+}
+
+.form-comentarios {
+    height: 45px;
+    width: 800px;
+    border: solid 2px black;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 8px 6px 4px ;
+    padding: 5px;
+    margin: 10px 20px 0px 0px;
+}
+
+.btn-form {
+    border: solid 2px black;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 8px 6px 4px ;
+    padding: 5px;
+    margin: 10px 20px 0px 0px;
+}
+
+.btn-form:hover {
+    background-color: rgb(179, 179, 179);
+    color: black;
+}
+
+/*seccion conocenos, reclamos*/
+
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 100vh;
 }
 
 /* seccion footer */
@@ -296,9 +349,6 @@ nav ul li a {
   list-style-type: none;
  }
 
- .carrito button{
-    margin: 3px;
- }
 
  .barra-navegacion ul li{
     font-size: 12px;
@@ -318,6 +368,10 @@ nav ul li a {
 }
 
 /*seccion main categorias*/
+
+.categorias{
+    margin: 15px 0px 15px 35px;
+}
 
 .subtitulo-pagina{
     font-size: 18px;
@@ -363,5 +417,17 @@ main p {
     width: 400px;
 }
 
+/*seccion reclamos*/
+
+.form-nombre {
+    height: 30px;
+    width: 300px;
+
 }
 
+.form-comentarios {
+    height: 30px;
+    width: 450px;
+}
+
+}

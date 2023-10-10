@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>   
+  <div class="ajuste-pantalla">
   <header class="header">
     <!--Imagen de inicio-->
   
@@ -31,27 +32,29 @@
         <li><a href="../index.html">Inicio</a></li>
       </ul>
 
-      <div class="carrito">
-
-      </div>
     </nav>
   </header>
 
   <main>
-    <h2 class="subtitulo-pagina">Dejanos tus reclamos y comentarios a:</h2>
-    <form action="404.html">
-      <input type="text" placeholder="Nombre">
-      <input type="text" placeholder="Dejanos tus comentarios">
-      <input type="reset">
-      <input type="submit">    
-    </form>
 
+    <h2 class="subtitulo-pagina">Dejanos tus reclamos y comentarios a:</h2>
+
+    <div class="formularios">
+      <form action="">
+       <input class="form-nombre" type="text" placeholder="Nombre">
+       <input class="form-comentarios" type="text" placeholder="Dejanos tus comentarios">
+       <input class="btn-form" type="reset" value="Restablecer">
+       <input class="btn-form" type="submit" value="Enviar">    
+      </form>
+
+    </div>
+    
   </main>
 
   <footer  class= "footer">
     <ul class="footer-bar">
-      <li class="footer-pag"><a href="../pages/conocenos.html">Conocenos</a></li>
-      <li class="footer-pag"><a href="../pages/contacto.html">Contacto</a></li>
+      <li class="footer-pag"><a href="../pages/conocenos.html">conocenos</a></li>
+      <li class="footer-pag"><a href="../pages/contacto.html">contacto</a></li>
     </ul>
 
     <div class="redes">
@@ -61,8 +64,9 @@
       <img src="../Imagenes/twitter.png" alt="imagen twitter">
     </div>
 
-</footer>
-    
-    
+  </footer>
+     
+ </div>
+
 </body>
 </html>
