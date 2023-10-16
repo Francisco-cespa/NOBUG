@@ -1,0 +1,116 @@
+/*Seccion header*/
+
+.header {
+    background-color: black;
+    height: 350px;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        "imagen titulo carrito"
+        "barra-navegacion barra-navegacion barra-navegacion"
+    ;
+    
+    .titulo {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        color: white;
+        font-size: 100px;
+        grid-area: titulo;
+    }
+
+    .imagen{
+        display: flex;
+        justify-content: flex-start;
+        grid-area: imagen;
+        img {
+            width: 250px;
+            height: 250px;
+        }
+    }
+
+    /*seccion barra navegacion*/
+   
+    .barra-navegacion {
+        grid-area: barra-navegacion;
+        display: flex;
+        width:  100%;
+        .barra-index {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+            .paginas-index {
+                list-style-type: none;
+            }
+            li {
+                border: solid 2px white;
+               border-radius: 0px 20px 0px 20px;
+              padding: 5px;
+            }
+            a {
+                color: white; 
+                text-decoration: none ;
+                list-style-type: none;
+            }
+            ul {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+
+    }
+    /*seccion carrito*/
+
+    .carrito{
+        grid-area: carrito;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        margin-right: 25px;
+        .carrito-img {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            list-style-type: none;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+            .button-index {
+                display: flex;
+                list-style-type: none;
+                padding: 6px;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-radius: 7px;
+                margin-right: 8px;
+                margin: 5px 6px 5px 0px;
+            }
+           
+        }
+        ul{
+            .button-index {
+                display: flex;
+                list-style-type: none;
+                padding: 6px;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-radius: 7px;
+                margin-right: 8px;
+                margin: 5px 6px 5px 0px;
+            }
+        }
+
+        
+        
+    }
+
+
+}
+
