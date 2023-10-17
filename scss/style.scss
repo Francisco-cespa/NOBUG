@@ -1,14 +1,20 @@
 @import "variables";
 @import "reset";
-@import "barra-navegacion";
-@import "carrito";
+// @import "barra-navegacion";
+@import "main-index";
 @import "categorias";
 @import "contacto";
 @import "footer";
 @import "header";
-@import "index";
+// @import "index";
 @import "reclamos";
 
+
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 100vh;
+}
 
 
 

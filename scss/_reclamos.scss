@@ -1,0 +1,37 @@
+/*seccion reclamos*/
+
+
+.formularios {
+    display: flex;
+    justify-content: center;
+    .form-nombre {
+        height: 45px;
+        width: 300px;
+        border: solid 2px black;
+        border-radius: 0px 20px 0px 20px;
+        box-shadow: 8px 6px 4px ;
+        padding: 5px;
+        margin: 10px 20px 0px 0px;
+    }
+    .form-comentarios {
+        height: 45px;
+        width: 800px;
+        border: solid 2px black;
+        border-radius: 0px 20px 0px 20px;
+        box-shadow: 8px 6px 4px ;
+        padding: 5px;
+        margin: 10px 20px 0px 0px;
+    }
+    .btn-form {
+        border: solid 2px black;
+        border-radius: 0px 20px 0px 20px;
+        box-shadow: 8px 6px 4px ;
+        padding: 5px;
+        margin: 10px 20px 0px 0px;
+        &:hover{
+            background-color: rgb(179, 179, 179);
+            color: black;
+        }
+    }
+
+}
