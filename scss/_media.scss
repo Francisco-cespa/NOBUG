@@ -1,0 +1,141 @@
+/*seccion media*/
+@media (min-width: 480px) and (max-width: 768px) {
+    .header{
+       display: grid;
+       grid-template-rows: 2fr 0.5fr;
+       grid-template-columns: 0.5fr 1fr 0.5fr;
+       grid-template-areas: 
+        "imagen titulo carrito"
+        "barra-navegacion barra-navegacion barra-navegacion"
+       ;
+       height: 200px;
+        .imagen{
+         display: flex;
+         align-items: center;
+            img{
+             width: 150px; height: 150px;
+            }
+        }
+        .titulo {
+         .titulo-tamaño{
+            font-size: 50px;
+            margin: 0;
+        }
+        }
+        .barra_navegacion{
+            
+            a {
+                font-size: 12px;
+                margin-bottom: 10p;
+            }
+           
+        }
+        .carrito {
+            font-size: 12px;
+            list-style-type: none;
+            .carrito-img{
+                .button-index{
+                    padding: 1.5px;
+                }
+            }
+            ul{
+                padding: 0;
+                .button-index{
+                    padding: 1.5px;
+                }
+            }
+        }
+
+    }
+
+    .juegos-main{
+        .tarjeta {
+            width: 250px;
+            font-size: 12px;
+            img{
+                width: 249px;
+                height: 249px;
+            }
+        }
+    }
+
+    .categorias{
+        margin: 15px 0px 15px 35px;
+    }
+
+    .subtitulo-pagina{
+        font-size: 18px;
+    }
+    
+    main {
+        p { 
+            font-size: 12px;
+        }
+    }
+    
+    .footer{
+        font-size: 12px;
+        .footer-bar{
+            padding-left: 0;
+            margin-left: 2px;
+            .footer-pag {
+                list-style-type: none;
+                border: solid 2px white;
+                border-radius: 0px 20px 0px 20px;
+                padding: 3px;
+                margin: 3px;
+                a {
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        }
+
+        .redes {
+            .nuestras-redes{
+                font-size: 12px;
+                font-weight: bold;
+                margin: 5px 5px 5px 5px;
+            }
+            img{
+                height: 30px;
+                width: 30px
+            }
+        }
+    }
+
+    .info-contacto{
+        .main__iframe{
+            iframe{
+                height: 300px;
+                width: 400px;
+            }
+        }
+    }
+
+    .formularios {
+        .form-nombre {
+            height: 30px;
+            width: 300px;
+        
+        }
+        
+        .form-comentarios {
+            height: 30px;
+            width: 450px;
+        }
+    }
+
+    .info-contacto{
+        .whatsapp {
+            img{
+                position: fixed;
+                top: 35%;
+                right: 5%;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    
+}

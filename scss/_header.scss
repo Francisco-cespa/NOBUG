@@ -16,8 +16,10 @@
         justify-content:center;
         align-items: center;
         color: white;
-        font-size: 100px;
         grid-area: titulo;
+        .titulo-tamaño{
+            font-size: 100px;
+        }
     }
 
     .imagen{
@@ -35,17 +37,13 @@
     .barra-navegacion {
         grid-area: barra-navegacion;
         display: flex;
-        width:  100%;
         margin-left: 25px;
-        .barra-index {
+        .barra {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 0px;
             padding-left: 0px;
-        }
-        .paginas-index {
-            list-style-type: none;
         }
         li {
             height: 38px;
