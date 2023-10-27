@@ -8,65 +8,70 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>   
   <div class="ajuste-pantalla">
-  <header class="header">
-    <!--Imagen de inicio-->
+    <header class="header">
+      <!--Imagen de inicio-->
   
-    <div class="imagen">
-      <a href="../index.html"> <img src="../Imagenes/NB.jpg" alt="imagen NOBUG"></a>
-    </div>
+      <div class="imagen">
+        <a href="../index.html"> <img src="../Imagenes/NB.jpg" alt="imagen NOBUG"></a>
+      </div>
 
-    <!-- Titulo principal -->
+      <!-- Titulo principal -->
 
-    <div class="titulo">
-      <h1 class="titulo-tamaño">NOBUG</h1> 
-    </div>
+      <div class="titulo">
+        <h1 class="titulo-tamaño animate__animated animate__backInDown">NOBUG</h1> 
+      </div>
 
-    <!-- Barra de navegacion-->
-    <nav class="barra-navegacion"> 
-                
-      <ul class="barra"> 
-        <li><a href="../index.html">Inicio</a></li>
+      <!-- Barra de navegacion-->
+      <nav class="barra-navegacion"> 
+                  
+        <ul class="barra"> 
+          <li><a href="../index.html">Inicio</a></li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <h2 class="subtitulo-pagina">Dejanos tus reclamos y comentarios a:</h2>
+
+      <div class="formularios">
+        <form action="">
+        <input class="form-nombre" type="text" placeholder="Nombre">
+        <input class="form-comentarios" type="text" placeholder="Dejanos tus comentarios">
+        <input class="btn-form" type="reset" value="Restablecer">
+        <input class="btn-form" type="submit" value="Enviar">    
+        </form>
+      </div>
+
+      <div class="texto-reclamo">
+        <p class="opinion animate__animated animate__fadeInLeftBig"> <strong>Tu opinión es importante, nos ayuda a mejorar.</strong></p>
+        <img class="flecha animate__animated animate__flipInX" src="../Imagenes/flecha.png" alt="imagen flecha">
+      </div>
+      
+    </main>
+
+    <footer  class= "footer">
+      <ul class="footer-bar">
+        <li class="footer-pag"><a href="../pages/conocenos.html">Conocenos</a></li>
+        <li class="footer-pag"><a href="../pages/contacto.html">Contacto</a></li>
       </ul>
 
-    </nav>
-  </header>
+      <div class="redes">
+        <h4>Nuestras redes:</h4>
+        <img src="../Imagenes/facebook.png" alt="imagen facebook">
+        <img src="../Imagenes/Instagram.png" alt="imagen instagram">
+        <img src="../Imagenes/twitter.png" alt="imagen twitter">
+      </div>
 
-  <main>
-
-    <h2 class="subtitulo-pagina">Dejanos tus reclamos y comentarios a:</h2>
-
-    <div class="formularios">
-      <form action="">
-       <input class="form-nombre" type="text" placeholder="Nombre">
-       <input class="form-comentarios" type="text" placeholder="Dejanos tus comentarios">
-       <input class="btn-form" type="reset" value="Restablecer">
-       <input class="btn-form" type="submit" value="Enviar">    
-      </form>
-
-    </div>
-    
-  </main>
-
-  <footer  class= "footer">
-    <ul class="footer-bar">
-      <li class="footer-pag"><a href="../pages/conocenos.html">Conocenos</a></li>
-      <li class="footer-pag"><a href="../pages/contacto.html">Contacto</a></li>
-    </ul>
-
-    <div class="redes">
-      <h4>Nuestras redes:</h4>
-      <img src="../Imagenes/facebook.png" alt="imagen facebook">
-      <img src="../Imagenes/Instagram.png" alt="imagen instagram">
-      <img src="../Imagenes/twitter.png" alt="imagen twitter">
-    </div>
-
-  </footer>
+    </footer>
      
- </div>
+  </div>
 
 </body>
 </html>

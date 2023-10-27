@@ -1,7 +1,7 @@
 /*seccion footer*/
 
 .footer{
-    background-color: black;
+    background-color: $color-principal;
     height: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,12 +18,13 @@
 
         .footer-pag{
             list-style-type: none;
-            border: solid 2px white;
+            border: solid 2px $color-secundario;
             border-radius: 0px 20px 0px 20px;
             padding: 5px;
             margin: 5px;
             a{
-                color: white;
+                font-size: map-get($fuente-tamanio, tamanio-principal );
+                color: $color-secundario;
                 text-decoration: none;
                 margin: 10px 10px 10px 10px; 
             }
@@ -35,12 +36,12 @@
         align-items: center;
         grid-area: redes;
         h4{
-            color: white;
+            color: $color-secundario;
             text-decoration: none;
             margin: 10px 10px 10px 10px;
         }
         .nuestras-redes{
-            color: white;
+            color: $color-secundario;
             text-decoration: none;
             margin: 10px 10px 10px 10px;
             font-size: 18px;

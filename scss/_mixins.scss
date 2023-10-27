@@ -1,0 +1,21 @@
+@mixin botones ($background-color ,$color, $border-color) {
+    display: flex;
+    list-style-type: none;
+    background-color:$background-color;
+    color:$color ;
+    margin-right: 8px ;
+    border-radius:7px ;
+    border-color:$border-color ;
+    padding: 6px;
+}
+
+@mixin boton-tarjeta($background-color ,$color, $border-color, $margin-top, $margin-bottom, $margin-left, $padding) {
+    background-color:$background-color;
+    color:$color ;
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+    margin-left: $margin-left;
+    border-radius:7px 0px 7px 0px ;
+    border-color:$border-color ;
+    padding: $padding;
+}

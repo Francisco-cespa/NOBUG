@@ -1,4 +1,5 @@
 .subtitulo-pagina{
+    font-size: map-get($fuente-tamanio, tamanio-subtitulo );
     text-decoration: underline;
     display: flex;
     justify-content: center;

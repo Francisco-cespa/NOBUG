@@ -7,31 +7,52 @@
     .form-nombre {
         height: 45px;
         width: 300px;
-        border: solid 2px black;
+        border: solid 2px $color-principal;
         border-radius: 0px 20px 0px 20px;
         box-shadow: 8px 6px 4px ;
         padding: 5px;
         margin: 10px 20px 0px 0px;
+        font-size: map-get($fuente-tamanio, tamanio-principal );
     }
     .form-comentarios {
         height: 45px;
         width: 800px;
-        border: solid 2px black;
+        border: solid 2px $color-principal;
         border-radius: 0px 20px 0px 20px;
         box-shadow: 8px 6px 4px ;
         padding: 5px;
         margin: 10px 20px 0px 0px;
+        font-size: map-get($fuente-tamanio, tamanio-principal );
     }
     .btn-form {
-        border: solid 2px black;
+        border: solid 2px $color-principal;
         border-radius: 0px 20px 0px 20px;
         box-shadow: 8px 6px 4px ;
         padding: 5px;
         margin: 10px 20px 0px 0px;
+        font-size: map-get($fuente-tamanio, tamanio-principal );
         &:hover{
             background-color: rgb(179, 179, 179);
-            color: black;
+            color: $color-principal;
         }
     }
 
+}
+
+.texto-reclamo{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    .opinion{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        font-size: map-get($fuente-tamanio , tamanio-principal );
+        margin-right: 30px;
+        margin-bottom: 3px;
+    }
+    img{
+        width: 60px;
+        height: 60px;
+    }
 }

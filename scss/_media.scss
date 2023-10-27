@@ -18,21 +18,36 @@
         }
         .titulo {
          .titulo-tamaño{
-            font-size: 50px;
+            font-size: map-get($fuente-tamanio , tamanio-titulo-rpv );
             margin: 0;
         }
         }
-        .barra_navegacion{
+
+        .barra-navegacion {
+            grid-area: barra-navegacion;
+            .barra {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 29.5px;
+                    a {
+                     font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
+                     color: $color-secundario; 
+                     text-decoration: none ;
+                    }
+                }
             
-            a {
-                font-size: 12px;
-                margin-bottom: 10p;
             }
-           
         }
+
         .carrito {
-            font-size: 12px;
+            font-size: map-get($fuente-tamanio , tamanio-principal-rpv );
             list-style-type: none;
+            margin-right: 5px;
             .carrito-img{
                 .button-index{
                     padding: 1.5px;
@@ -51,30 +66,37 @@
     .juegos-main{
         .tarjeta {
             width: 250px;
-            font-size: 12px;
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
+            .button-tarjeta{
+                font-size: map-get($fuente-tamanio, tamanio-principal-rpv  );
+                @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 1px, 3px, 3px, 1px)
+            }
+            .titulo-juego{
+                font-size: map-get($fuente-tamanio, tamanio-principal );
+            }
             img{
-                width: 249px;
+                width: 248px;
                 height: 249px;
             }
         }
     }
 
     .categorias{
-        margin: 15px 0px 15px 35px;
+        margin: 15px 0px 15px 20px;
     }
 
     .subtitulo-pagina{
-        font-size: 18px;
+        font-size: map-get($fuente-tamanio , tamanio-subtitulo-rpv );
     }
     
     main {
         p { 
-            font-size: 12px;
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
         }
     }
     
     .footer{
-        font-size: 12px;
+        font-size:map-get($fuente-tamanio, tamanio-principal-rpv );
         .footer-bar{
             padding-left: 0;
             margin-left: 2px;
@@ -85,6 +107,7 @@
                 padding: 3px;
                 margin: 3px;
                 a {
+                    font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
                     margin: 5px 5px 5px 5px;
                 }
             }
@@ -92,7 +115,7 @@
 
         .redes {
             .nuestras-redes{
-                font-size: 12px;
+                font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
                 font-weight: bold;
                 margin: 5px 5px 5px 5px;
             }
@@ -113,19 +136,50 @@
     }
 
     .formularios {
+        margin-left: 10px;
         .form-nombre {
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
             height: 30px;
             width: 300px;
         
         }
         
         .form-comentarios {
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
             height: 30px;
             width: 450px;
+        }
+        .btn-form {
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv);
+            border: solid 2px $color-principal;
+            border-radius: 0px 15px 0px 15px;
+            box-shadow: 8px 6px 4px ;
+            padding: 1px;
+            margin: 10px 20px 0px 0px;
+            &:hover{
+                background-color: rgb(179, 179, 179);
+                color: $color-principal;
+            }
+        }
+    }
+
+    .texto-reclamo{
+        margin-top: 0px;
+        .opinion{
+            font-size: map-get($fuente-tamanio , tamanio-principal-rpv );
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
         }
     }
 
     .info-contacto{
+        ul{
+            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
+        }
         .whatsapp {
             img{
                 position: fixed;
@@ -136,6 +190,4 @@
             }
         }
     }
-
-    
 }

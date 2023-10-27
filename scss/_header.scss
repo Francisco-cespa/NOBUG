@@ -1,7 +1,7 @@
 /*Seccion header*/
 
 .header {
-    background-color: black;
+    background-color: $color-principal;
     height: 350px;
     display: grid;
     grid-template-rows: 5fr 1fr;
@@ -15,10 +15,10 @@
         display: flex;
         justify-content:center;
         align-items: center;
-        color: white;
+        color:$color-secundario;
         grid-area: titulo;
         .titulo-tamaño{
-            font-size: 100px;
+            font-size: map-get( $fuente-tamanio , tamanio-titulo);
         }
     }
 
@@ -36,38 +36,33 @@
    
     .barra-navegacion {
         grid-area: barra-navegacion;
-        display: flex;
-        margin-left: 25px;
+        width: 100%;
         .barra {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             margin-bottom: 0px;
             padding-left: 0px;
+            li {
+                border: solid 2px $color-secundario;
+                border-radius: 0px 20px 0px 20px;
+                padding: 5px;
+                list-style-type: none;
+                a {
+                    font-size: map-get($fuente-tamanio, tamanio-principal );
+                    color: $color-secundario; 
+                    text-decoration: none ;
+                }
+            }
+        
         }
-        li {
-            height: 38px;
-            border: solid 2px white;
-            border-radius: 0px 20px 0px 20px;
-            padding: 5px;
-            list-style-type: none;
-        }
-        a {
-            color: white; 
-            text-decoration: none ;
-        }
-        ul {
-            display: flex;
-            justify-content: space-around;
-        }
-
     }
 
     /*seccion carrito*/
 
     .carrito{
         grid-area: carrito;
-        color: white;
+        color: $color-secundario;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,44 +78,28 @@
                 height: 30px;
             }
             .button-index {
-                display: flex;
-                list-style-type: none;
-                padding: 6px;
-                background-color: black;
-                color: white;
-                border-color: white;
-                border-radius: 7px;
-                margin-right: 8px;
-                margin: 5px 6px 5px 0px;
+                @include botones ($color-principal,$color-secundario, $color-secundario);
+                transition: background-color 1s;
                 &:hover{
-                    background-color: white;
-                    color: black;
+                 background-color: white;
+                 color: black;
                 }
             }
            
         }
         ul{
             .button-index {
-                display: flex;
-                list-style-type: none;
-                padding: 6px;
-                background-color: black;
-                color: white;
-                border-color: white;
-                border-radius: 7px;
-                margin-right: 8px;
-                margin: 5px 6px 5px 0px;
+                @include botones ($color-principal ,$color-secundario, $color-secundario);
+                transition: background-color 1s;
+                margin: 10px 10px 0px;
                 &:hover{
-                    background-color: white;
-                    color: black;
+                 background-color: white;
+                 color: black;
                 }
             }
         }
 
         
-        
     }
-
-
 }
 
