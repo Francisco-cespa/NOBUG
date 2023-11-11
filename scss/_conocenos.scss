@@ -1,0 +1,17 @@
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 100vh;
+}
+
+.cont-presentacion{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    .texto-presentacion{
+        border: solid 2px $color-principal;
+        box-shadow: 5px 5px 5px $color-principal;
+        width: 70%;
+        padding: 10px;
+    }
+}

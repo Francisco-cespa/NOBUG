@@ -76,6 +76,7 @@
             img{
                 width: 30px;
                 height: 30px;
+                margin-right: 12px;
             }
             .button-index {
                 @include botones ($color-principal,$color-secundario, $color-secundario);
@@ -91,7 +92,7 @@
             .button-index {
                 @include botones ($color-principal ,$color-secundario, $color-secundario);
                 transition: background-color 1s;
-                margin: 10px 10px 0px;
+                margin: 10px 0px 0px;
                 &:hover{
                  background-color: white;
                  color: black;

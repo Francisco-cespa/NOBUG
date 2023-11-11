@@ -47,9 +47,20 @@
             font-size: 18px;
             font-weight: bold;
         }
-        img{
-            width: 45px;
-            height: 45px;
+        a {
+          margin-left: 3px;
+          margin-right: 3px;
+          .img-inst{
+             height:40px;
+             width:40px;
+            }
+           img{
+                width: 45px;
+                height: 45px;
+            }
         }
+        
+
     }
+        
 }

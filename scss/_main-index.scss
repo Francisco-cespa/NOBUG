@@ -11,6 +11,7 @@
     flex-wrap: wrap;
     .tarjeta{
         width: 500px;
+        height: 705px;
         border: solid 1px black ;
         border-radius: 5px;
         margin: 10px 0 20px 30px;
@@ -18,14 +19,29 @@
             text-align: center; text-decoration: underline;
             font-size: map-get($fuente-tamanio , tamanio-subtitulo );
         }
+        h3{
+            margin-bottom: 0px;
+            font-weight: 700;
+        }
         img{
             width: 498px;
             height: 498px;
         }
-        .button-tarjeta{
-            font-size: map-get($fuente-tamanio, tamanio-principal );
-            @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 3px, 5px, 5px, 0px)
+        p{
+            padding:10px;
+            margin-bottom: 0px;
         }
+        .precio{
+            display: flex;
+            justify-content: space-between;
+            height: 38px;
+            align-items:center;
+            .button-tarjeta{
+                font-size: map-get($fuente-tamanio, tamanio-principal );
+                @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 2px, 4px, 4px, 0px)
+            }
+        }
+        
     }
 }
 

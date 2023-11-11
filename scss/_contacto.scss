@@ -1,12 +1,23 @@
 /*seccion contaco*/
 
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 100vh;
+}
+
 .info-contacto{
     display: flex;
     flex-direction: column;
-    ul{
-        font-size: map-get($fuente-tamanio, tamanio-principal );
-        margin: 30px 0px 30px 40px;
+    .tipos-contacto{
+        display: flex;
+        justify-content: center;
+        ul{
+            font-size: map-get($fuente-tamanio, tamanio-principal );
+            margin: 30px 0px 30px 40px;
+        }
     }
+
     .main__iframe{
         display: flex;
         flex-direction: column;

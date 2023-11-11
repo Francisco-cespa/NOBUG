@@ -1,5 +1,10 @@
 /*seccion reclamos*/
 
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 100vh;
+}
 
 .formularios {
     display: flex;

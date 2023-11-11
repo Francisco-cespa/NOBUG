@@ -49,6 +49,9 @@
             list-style-type: none;
             margin-right: 5px;
             .carrito-img{
+                img{
+                 margin: 0px;
+                }
                 .button-index{
                     padding: 1.5px;
                 }
@@ -66,13 +69,19 @@
     .juegos-main{
         .tarjeta {
             width: 250px;
+            height: 485px;
             font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
-            .button-tarjeta{
-                font-size: map-get($fuente-tamanio, tamanio-principal-rpv  );
-                @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 1px, 3px, 3px, 1px)
+            .precio{
+                .button-tarjeta{
+                    font-size: map-get($fuente-tamanio, tamanio-principal-rpv  );
+                    @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 0px, 3px, 3px, 1px)
+                }
             }
             .titulo-juego{
                 font-size: map-get($fuente-tamanio, tamanio-principal );
+            }
+            p{
+                padding:2px 5px 5px 5px;
             }
             img{
                 width: 248px;
@@ -90,6 +99,9 @@
     }
     
     main {
+        .carrusel{
+            border: none;
+        }
         p { 
             font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
         }
@@ -119,10 +131,30 @@
                 font-weight: bold;
                 margin: 5px 5px 5px 5px;
             }
-            img{
-                height: 30px;
-                width: 30px
+            a {
+                margin-left: 3px;
+                margin-right: 3px;
+                .img-inst{
+                   height:25px;
+                   width:25px;
+                }
+                img{
+                 width: 30px;
+                 height: 30px;
+                }
             }
+        }
+    }
+
+    .cont-presentacion{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        .texto-presentacion{
+            border: solid 2px $color-principal;
+            box-shadow: 5px 5px 5px $color-principal;
+            width: 400px;
+            padding: 10px;
         }
     }
 
@@ -147,7 +179,7 @@
         .form-comentarios {
             font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
             height: 30px;
-            width: 450px;
+            width: 95%;
         }
         .btn-form {
             font-size: map-get($fuente-tamanio, tamanio-principal-rpv);
@@ -177,9 +209,13 @@
     }
 
     .info-contacto{
-        ul{
-            font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
+
+        .tipos-contacto{
+            ul{
+                font-size: map-get($fuente-tamanio, tamanio-principal-rpv );
+            }
         }
+        
         .whatsapp {
             img{
                 position: fixed;
@@ -192,3 +228,250 @@
     }
 }
 
+/*seccion media mobile*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header{
+       height: 130px;
+       width: 100%;
+        .imagen{
+         display: flex;
+         align-items: center;
+            img{
+             width: 100px; height: 100px;
+            }
+        }
+        .titulo {
+         .titulo-tamaño{
+            font-size: map-get($fuente-tamanio , tamanio-titulo-mbl );
+            margin: 0;
+        }
+        }
+
+        .barra-navegacion {
+            
+            .barra {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 20.5px;
+                    border-radius: 0px 14px 0px 14px;
+                    a {
+                     font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+                     color: $color-secundario; 
+                     text-decoration: none ;
+                    }
+                }
+            
+            }
+        }
+
+        .carrito {
+            font-size: map-get($fuente-tamanio , tamanio-principal-mbl );
+            list-style-type: none;
+            margin-right: 2px;
+            .carrito-img{
+                img{
+                    height: 20px;
+                    width: 20px;
+                 margin: 0px;
+                }
+                .button-index{
+                    padding: 1.5px;
+                }
+            }
+            ul{
+                padding: 0;
+                margin-bottom: 0px;
+                
+                .button-index{
+                    padding: 1.5px;
+                    margin-top: 2.5px;
+                }
+            }
+        }
+
+    }
+    
+    .subtitulo-pagina{
+        font-size: map-get($fuente-tamanio,tamanio-principal);
+        margin-bottom: 0;
+    }
+
+    .carrusel{
+        border: solid black 2px;
+    }
+
+    .juegos-main{
+        .tarjeta {
+            width: 195px;
+            height: 385px;
+            font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+            margin: 15px 0px 10px 0px;
+            .precio{
+                .button-tarjeta{
+                    font-size: map-get($fuente-tamanio, tamanio-principal-mbl  );
+                    @include boton-tarjeta ($color-secundario, $color-principal,$color-principal, 0px, 3px, 3px, 1px)
+                }
+            }
+            .titulo-juego{
+                font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+            }
+            p{
+                padding:2px 5px 5px 5px;
+            }
+            img{
+                width: 193px;
+                height: 193px;
+            }
+        }
+    }
+
+    .pagination{
+        --bs-pagination-font-size: 10px;
+        margin-bottom: 0.5rem;
+        --bs-pagination-padding-x: 0.35rem;
+        --bs-pagination-padding-y: 0.15rem;
+    }
+
+    .categorias{
+        margin: 15px 0px 15px 0px;
+        font-size: map-get($fuente-tamanio , tamanio-principal-mbl );
+    }
+
+    .subtitulo-pagina{
+        font-size: map-get($fuente-tamanio , tamanio-subtitulo-mbl );
+    }
+    
+    main {
+        p { 
+            font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+        }
+    }
+    
+    .footer{
+        font-size:map-get($fuente-tamanio, tamanio-principal-mbl );
+        align-items: center;
+        .footer-bar{
+            padding-left: 0;
+            margin-left: 2px;
+            .footer-pag {
+                list-style-type: none;
+                border: solid 2px white;
+                border-radius: 0px 15px 0px 15px;
+                padding: 0.5px;
+                margin: 2px;
+                a {
+                    font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        }
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+            .nuestras-redes{
+                font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+                font-weight: bold;
+                margin: 5px 5px 5px 5px;
+            }
+
+            .logos-redes{
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+            a {
+                margin-left: 3px;
+                margin-right: 3px;
+                .img-inst{
+                   height:20px;
+                   width:20px;
+                }
+                img{
+                 width: 25px;
+                 height: 25px;
+                }
+            }
+        }
+    }
+    
+
+    .formularios {
+        margin-left: 10px;
+        .form-nombre {
+            font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+            height: 30px;
+            width: 300px;
+        
+        }
+        
+        .form-comentarios {
+            font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+            height: 200px;
+            width: 95%;
+        }
+        .btn-form {
+            font-size: map-get($fuente-tamanio, tamanio-principal-mbl);
+            border: solid 2px $color-principal;
+            border-radius: 0px 15px 0px 15px;
+            box-shadow: 8px 6px 4px ;
+            padding: 1px;
+            margin: 10px 20px 0px 0px;
+            &:hover{
+                background-color: rgb(179, 179, 179);
+                color: $color-principal;
+            }
+        }
+    }
+
+    .texto-reclamo{
+        margin-top: 0px;
+        .opinion{
+            font-size: map-get($fuente-tamanio , tamanio-principal-mbl );
+            margin-right: 10px;
+            margin-bottom: 2px;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .info-contacto{
+
+        .main__iframe{
+            iframe{
+                height: 250px;
+                width: 250px;
+            }
+        }
+        
+        .tipos-contacto{
+            ul{
+                font-size: map-get($fuente-tamanio, tamanio-principal-mbl );
+            }
+        }
+        
+        .whatsapp {
+            img{
+                position: fixed;
+                top: 46%;
+                right: 2%;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.ajuste-pantalla {
+    display: grid;
+    grid-template-rows: 1fr 12fr 1fr;;
+    height: 80vh;
+}
